@@ -12,7 +12,7 @@ export default function Post(props) {
         </div>
       </div>
 
-      <img src={props.PostImage} alt="" />
+      <img src={props.PostImage} alt="JustFun" width="450px"/>
 
       <div className="history">
         <div className="likes">

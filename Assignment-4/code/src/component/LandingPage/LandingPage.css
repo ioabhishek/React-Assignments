@@ -1,0 +1,19 @@
+.mainLandingPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px;
+  gap: 20px;
+}
+
+h1 {
+  color: #008669;
+}
+
+button {
+  color: #008669;
+  background-color: white;
+  border: 1px solid #008669;
+  padding: 8px 25px;
+  border-radius: 8px;
+}

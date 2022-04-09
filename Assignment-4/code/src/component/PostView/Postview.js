@@ -2,18 +2,17 @@ import React from 'react';
 import './Postview.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import Header from './component/Header';
-import Post from './component/Post';
+import Header from '../Header';
+import Post from '../Post';
 
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const currentDate = new Date();
 const date = currentDate.getDate()+' '+ months[currentDate.getMonth()]+' '+currentDate.getFullYear();
 
-
 const Postview=()=> {
 
-  const [data,usedata] = useState([])
+  const [data, usedata] = useState([])
 
   const getData = async() => {
     let response = await fetch(`http://localhost:3004/user`);
@@ -21,15 +20,17 @@ const Postview=()=> {
     usedata(acutalData);
   }
 
-  useEffect(() => {getData()}, []);
-  console.log(data);
+  useEffect(() => {
+    getData()
+  }, []); 
 
   return (
     <div className="site-container">
       <Header/>
-      {data.map((element) => {
-        return (
+      {data.map((element, idx) => {
+        return (  
           <Post 
+            key = {idx}
             name = {element.name}
             location = {element.location}
             likes = {element.likes}
@@ -45,15 +46,6 @@ const Postview=()=> {
 
 export default Postview;
 
-
-
-
-
-
-
-
-
-
-
+// json-server --watch Mock-data/Mock.json --port 3004
 
 
