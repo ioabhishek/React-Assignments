@@ -6,14 +6,12 @@ import Header from '../Header';
 import Post from '../Post';
 
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+/* const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const currentDate = new Date();
-const date = currentDate.getDate()+' '+ months[currentDate.getMonth()]+' '+currentDate.getFullYear();
+const date = currentDate.getDate()+' '+ months[currentDate.getMonth()]+' '+currentDate.getFullYear(); */
 
 const Postview=()=> {
-
   const [data, usedata] = useState([])
-
   const getData = async() => {
     let response = await fetch(`http://localhost:3004/user`);
     let acutalData = await response.json();
@@ -36,7 +34,7 @@ const Postview=()=> {
             likes = {element.likes}
             description = {element.description}
             PostImage = {element.PostImage}
-            date = {date}
+            date = {element.date}
           />
         )
       })}

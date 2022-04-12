@@ -5,24 +5,24 @@
           "location":"Bengaluru",
           "likes":64,
           "description": "Kick start your career",
-          "PostImage": "https://media.istockphoto.com/photos/number-one-sitting-over-pink-and-blue-background-picture-id1345521494?b=1&k=20&m=1345521494&s=170667a&w=0&h=ls6IDYSsGr0uQpYeEpttgVC9dsXNNFz62e1z3pAzR-A=",
-          "date": "new Date()"
+          "PostImage": "./Images/1.jpg",
+          "date": "06 March 2022"
           },
 
           {"name":"Neeraj",
           "location":"Pune",
           "likes":30,
           "description": "Sample Description",
-          "PostImage": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-          "date": "new Date()"
+          "PostImage": "./Images/2.webp",
+          "date": "04 April 2022"
           },
 
           {"name":"Rahul",
           "location":"Hyderabad",
           "likes":30,
           "description": "Sample Description for Post",
-          "PostImage": "https://res.cloudinary.com/twenty20/private_images/t_standard-fit/photosp/876b471e-7869-4370-a91c-3e1a745efdbb/stock-photo-nature-forest-holding-protection-agriculture-green-hand-life-human-876b471e-7869-4370-a91c-3e1a745efdbb.jpg",
-          "date": "new Date()"
+          "PostImage": "./Images/3.jpg",
+          "date": "07 April 2022"
           }
           ]
 }

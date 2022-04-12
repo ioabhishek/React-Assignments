@@ -6,7 +6,7 @@ function LandingPage() {
   return (
     <div className='mainLandingPage'>
       <div>
-        <img src={require('./Blue and White Classic Refined Food Journal.jpg')} alt="" width="400px"/>
+        <img src="./Images/landing.jpg" alt="" width="400px"/>
       </div>
       <div>
         <h1>10X Team 04</h1>
